@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(./../img/about/bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  &__container {
+    max-width: 680px;
+  }
+
+  &__text {
+    padding-bottom: 44px;
+  }
+}
+
+@include tablet() {
+  .about {
+    background-position: center center;
+    background-size: cover;
+  }
+}

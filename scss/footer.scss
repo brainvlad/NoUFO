@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.footer {
+  width: 100%;
+  padding: 26px 0 52px 0;
+
+  &__content {
+  }
+
+  &__copyright {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 40px;
+    text-align: center;
+    opacity: 0.2;
+    font-size: 18px;
+    line-height: 145%;
+  }
+}

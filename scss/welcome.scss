@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  align-items: flex-end;
+  padding-top: 72px;
+
+  &__bg {
+    background-image: url(./../img/home/welcome-bg.png);
+    background-position: center center;
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    width: 100%;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 110%;
+  }
+
+  &__subtitle {
+    max-width: 680px;
+    font-size: 20px;
+    line-height: 145%;
+    opacity: 0.6;
+    text-align: right;
+  }
+}
+
+@include tablet() {
+  .welcome {
+    &__title {
+      font-size: 48px;
+      line-height: 110%;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 145%;
+    }
+  }
+}
+
+@include mobile-medium() {
+  .welcome {
+    &__title {
+      font-size: 28px;
+      line-height: 120%;
+    }
+  }
+}

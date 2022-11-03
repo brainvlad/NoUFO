@@ -1,0 +1,29 @@
+$black: #000000;
+$black-hover: #202020;
+$white: #ffffff;
+$button: #00a39e;
+$button-hover: #42fffa;
+
+@mixin pc-small() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-large() {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mobile-medium() {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
